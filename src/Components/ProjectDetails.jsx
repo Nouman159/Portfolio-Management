@@ -5,13 +5,10 @@ const ProjectDetails = ({ title = '', details = [], images = [] }) => {
 
     return (
         <div className="p-6 max-w-4xl mx-auto">
-            {/* Project Title */}
             <h1 className="text-3xl font-bold mb-6 text-center">{title}</h1>
 
-            {/* Loop through images and group of 2 paragraphs */}
             {Array.from({ length: maxItems }).map((_, index) => (
                 <div key={index} className="mb-6">
-                    {/* Conditionally render image */}
                     {index < images.length && (
                         <img
                             src={images[index]}
@@ -20,7 +17,6 @@ const ProjectDetails = ({ title = '', details = [], images = [] }) => {
                         />
                     )}
 
-                    {/* Conditionally render two paragraphs */}
                     {index * 2 < details.length && (
                         <p className="text-lg text-gray-700 mb-4">
                             {details[index * 2]}
