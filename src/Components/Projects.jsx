@@ -18,7 +18,7 @@ const Projects = () => {
 
 
                     {projects.map((project, index) => (
-                        <div>
+                        <div key={index}>
                             <a href='0' target='blank'>
 
 
