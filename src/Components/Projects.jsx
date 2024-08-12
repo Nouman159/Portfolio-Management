@@ -22,18 +22,18 @@ const projects = [
 const Projects = () => {
     return (
 
-        <div className="bg-black text-white py-16">
+        <div className="bg-slate-50 text-white py-16">
             <div className="max-w-7xl mx-auto px-6">
                 <div className="text-center mb-12">
-                    <h1 className="text-3xl font-bold">My Projects</h1>
+                    <h1 className="text-5xl text-black font-bold font-roboto">My Projects</h1>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-12">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mx-12 max-sm:mx-2">
                     {projects.map((project, index) => (
-                        <a href={project.url} target="_blank" rel="noopener noreferrer" key={index}>
-                            <div className="flex flex-col min-h-[400px] bg-gray-800 rounded-lg overflow-hidden transform transition duration-500 hover:scale-105 hover:shadow-xl">
+                        <a href={project.url} target="_blank" rel="noopener noreferrer" key={index} className='bg-gray-800 border-2 hover:scale-105 hover:shadow-xl'>
+                            <div className="flex flex-col min-h-[400px] overflow-hidden transform transition duration-500">
                                 <div className="h-64 relative overflow-hidden">
-                                    <img src={project.url} alt="Project" className="h-full w-full object-cover" />
+                                    <img src={project.url} alt="Project" className="h-full w-full object-fit" />
                                 </div>
                                 <div className="p-6 flex-1 flex flex-col justify-center">
                                     <p className="text-center">

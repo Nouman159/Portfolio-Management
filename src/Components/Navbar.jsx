@@ -18,16 +18,16 @@ const Navbar = () => {
     };
 
     return (
-        <nav className='h-16 bg-gray-300'>
+        <nav className='h-16 bg-[#001f3f] text-white'>
             <div className='text-3xl flex px-8 pl-[10%] py-3'>
                 <h2>
-                    Navbar
+                    Nouman Arshad
                 </h2>
                 <div className='ml-auto mr-4 max-sm:mr-0'>
                     <ul className='flex text-xl py-2 space-x-8 max-md:hidden'>
                         {navItems.map((navItem, index) => (
                             <Link to={navItem.url} key={index}>
-                                <li className='cursor-pointer hover:text-blue-400 transition-colors duration-300'>
+                                <li className='cursor-pointer hover:text-[#0074D9] transition-colors duration-300'>
                                     {navItem.name}
                                 </li>
                             </Link>
@@ -39,7 +39,7 @@ const Navbar = () => {
 
             {/* Mobile Dropdown */}
             <div
-                className={`fixed top-0 left-0 w-full h-96 bg-gray-200 z-0 transition-transform duration-300 ease-in-out ${navOpen ? 'translate-y-0' : '-translate-y-full'} max-md:flex flex-col justify-center`}
+                className={`fixed top-0 left-0 w-full h-96 bg-[#001f3f] z-0 transition-transform duration-300 ease-in-out ${navOpen ? 'translate-y-0' : '-translate-y-full'} max-md:flex flex-col justify-center`}
             >
                 <X className='ml-auto mr-8 cursor-pointer' onClick={toggleNav} />
                 <ul className='flex flex-col space-y-4 text-xl py-2 text-center'>
