@@ -21,8 +21,7 @@ const Navbar = () => {
         <nav className='h-16 bg-[#001f3f] text-white'>
             <div className='text-3xl flex px-8 pl-[10%] py-3'>
                 <h2>
-                    Nouman Arshad
-                </h2>
+                    Bilal Mustafa                </h2>
                 <div className='ml-auto mr-4 max-sm:mr-0'>
                     <ul className='flex text-xl py-2 space-x-8 max-md:hidden'>
                         {navItems.map((navItem, index) => (
