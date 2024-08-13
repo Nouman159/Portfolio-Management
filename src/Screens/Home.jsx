@@ -10,7 +10,7 @@ import Skills from '../Components/Skills'
 
 const Home = () => {
     return (
-        <div>
+        <div className='App'>
             <Hero />
             <ProjectDetails />
             <Testimonials />

@@ -3,30 +3,30 @@ import '../index.css'
 
 const testimonialsData = [
     {
-        text: "Usman was an amazing technical partner as we grew Concert. His rapid prototyping and testing helped us deliver first-in-category features in a competitive landscape. As we began to see success, and grew rapidly",
-        name: "Ali Ahmed",
+        text: "Exellent work one more time. Congrats and delighting to work with you",
+        name: "Yoannaka",
+        title: "At replit"
+    },
+    {
+        text: "Extremely responsive, catered to everything, and was willing to improve his designs based on my input. You don't find a lot of front-end devs these days that are willing to do what he can.",
+        name: "A2Pro",
         title: "Senior Developer"
     },
     {
-        text: "Usman was an amazing technical partner as we grew Concert. His rapid prototyping and testing helped us deliver first-in-category features in a competitive landscape. As we began to see success, and grew rapidly, Usman helped us recruit excellent talent very quickly, and helped us prioritize an increasingly complex roadmap. Usman’s startup leadership helped us scale and sell the business in just a few years- he’d be an incredible asset to anyone’s team!",
-        name: "Ali Ahmed",
-        title: "Senior Developer"
+        text: "Had an urgent deadline, Nouman got the job done.",
+        name: "BountyHunter14",
+        title: "At replit"
     },
     {
-        text: "Usman was an amazing technical partner as we grew Concert. His rapid prototyping and testing helped us deliver first-in-category features in a competitive landscape. As we began to see success, and grew rapidly, Usman helped us recruit excellent talent very quickly, and helped us prioritize an increasingly complex roadmap. Usman’s startup leadership helped us scale and sell the business in just a few years- he’d be an incredible asset to anyone’s team!",
-        name: "Ali Ahmed",
-        title: "Senior Developer"
-    },
-    {
-        text: "Usman was an amazing technical partner as we grew Concert. His rapid prototyping and testing helped us deliver first-in-category features in a competitive landscape. As we began to see success, and grew rapidly, Usman helped us recruit excellent talent very quickly, and helped us prioritize an increasingly complex roadmap. Usman’s startup leadership helped us scale and sell the business in just a few years- he’d be an incredible asset to anyone’s team!",
-        name: "Ali Ahmed",
-        title: "Senior Developer"
+        text: "Excellent Work and very fast delivery! Highly recommended. Nouman kept me updated regarding the project with his excellent communication skills. Would work with him again. ",
+        name: "AbuBakr-Chan",
+        title: "Senior AI Developer"
     }
 ];
 
 const Testimonials = () => {
     return (
-        <div className="bg-gray-200 py-8 bg-[url('https://usmanasif.com/wp-content/uploads/2023/10/bg-1-1.jpg')] bg-cover bg-center">
+        <div id="testimonials" className="bg-gray-200 py-8 bg-[url('https://usmanasif.com/wp-content/uploads/2023/10/bg-1-1.jpg')] bg-cover bg-center">
             <h1 className='text-white flex text-4xl font-semibold justify-center font-roboto'>
                 Testimonials
             </h1>

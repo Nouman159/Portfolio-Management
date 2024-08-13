@@ -8,15 +8,15 @@ import { SiLeetcode } from 'react-icons/si';
 const icons = [
     {
         picture: FaLinkedin,
-        url: 'https://www.linkedin.com/in/bilal-mustafa-b1752023b/',
+        url: 'https://www.linkedin.com/in/nouman-arshad-853165240/',
     },
     {
         picture: FaGithub,
-        url: 'https://github.com/BilalMustafa123',
+        url: 'https://github.com/Nouman159',
     },
     {
         picture: SiLeetcode,
-        url: 'https://leetcode.com/',
+        url: 'https://leetcode.com/u/noumanarshad15926/',
     },
 ];
 
@@ -24,23 +24,23 @@ const contactInfo = [
     {
         icon: CiLocationOn,
         label: 'Address',
-        value: 'Federal B Area Karachi, Pakistan.',
+        value: 'Lahore Cantt, Pakistan.',
     },
     {
         icon: FaPhone,
         label: 'Phone No',
-        value: '+92 3217652542',
+        value: '+92 324 6606708',
     },
     {
         icon: MdEmail,
         label: 'Email',
-        value: 'mbm15486@gmail.com',
+        value: 'noumanarshad15926@gmail.com',
     },
 ];
 
 const Footer = () => {
     return (
-        <div className="bg-[#001f3f] text-white px-12 py-16">
+        <div id='contact' className="bg-[#001f3f] text-white px-12 py-16">
             <div className="max-w-7xl mx-auto px-6 font-playfair">
                 <h1 className="text-4xl text-center md:text-left mb-12 font-roboto">Contact Info</h1>
 

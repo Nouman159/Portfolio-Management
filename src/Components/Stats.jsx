@@ -1,16 +1,14 @@
 import React from 'react'
 
 const items = [
-    { title: 'Projects', count: '12+', bgColor: 'bg-[#98FF98]]' },
-    { title: 'Clients', count: '50+', bgColor: 'bg-gra' },
-    { title: 'Awards', count: '5+', bgColor: 'bg-gra300' },
-    { title: 'Awards', count: '5+', bgColor: 'bg-ble-200' },
-    // Add more items as needed
+    { title: 'Projects', count: '25+', bgColor: 'bg-[#98FF98]]' },
+    { title: 'Clients', count: '10+', bgColor: 'bg-gra' },
+    { title: 'Certifications', count: '2+', bgColor: 'bg-gra300' },
 ]
 
 const Stats = () => {
     return (
-        <div className='bg-black text-white'>
+        <div id="experience" className='bg-black py-8 text-white'>
             <div className='grid gap-8 lg:grid-cols-3 md:grid-cols-2 max-sm:grid-cols-1 py-8 px-8'>
                 {items.map((item, index) => (
                     <div

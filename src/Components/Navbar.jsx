@@ -3,34 +3,57 @@ import { Menu, X } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
 const navItems = [
-    { name: 'Home', url: '/' },
-    { name: 'About', url: '/about' },
-    { name: 'Services', url: '/services' },
-    { name: 'Contact', url: '/contact' },
-    { name: 'Any', url: '/any' },
+    { name: 'Testimonials', id: 'testimonials' },
+    { name: 'Projects', id: 'projects' },
+    { name: 'Experience', id: 'experience' },
+    { name: 'Vision', id: 'vision' },
+    { name: 'Contact', id: 'contact' },
 ];
 
 const Navbar = () => {
     const [navOpen, setNavOpen] = useState(false);
+
+    const scrollToComponent = (id) => {
+        setNavOpen(false)
+        const targetPosition = document.getElementById(id).offsetTop;
+        const startPosition = window.pageYOffset;
+        const distance = targetPosition - startPosition;
+        const duration = 1000; // Duration in milliseconds
+        let start = null;
+
+        const step = (timestamp) => {
+            if (!start) start = timestamp;
+            const progress = timestamp - start;
+            const percentage = Math.min(progress / duration, 1);
+            window.scrollTo(0, startPosition + distance * percentage);
+            if (progress < duration) {
+                window.requestAnimationFrame(step);
+            }
+        };
+
+        window.requestAnimationFrame(step);
+    }
+
 
     const toggleNav = () => {
         setNavOpen(!navOpen);
     };
 
     return (
-        <nav className='h-16 bg-[#001f3f] text-white'>
+        <nav id='navbar' className='h-16 bg-[#001f3f] text-white sticky top-0 z-50'>
             <div className='text-3xl flex px-8 pl-[10%] py-3'>
-                <h2>
-                    Nouman Arshad
+                <h2 onClick={() => scrollToComponent('hero')} className='hover:cursor-pointer'>
+                    Portfolio
                 </h2>
                 <div className='ml-auto mr-4 max-sm:mr-0'>
-                    <ul className='flex text-xl py-2 space-x-8 max-md:hidden'>
+                    <ul className='flex text-xl py-2 space-x-4 lg:space-x-8 max-md:hidden'>
                         {navItems.map((navItem, index) => (
-                            <Link to={navItem.url} key={index}>
-                                <li className='cursor-pointer hover:text-[#0074D9] transition-colors duration-300'>
-                                    {navItem.name}
-                                </li>
-                            </Link>
+                            // <Link to={navItem.url} key={index}>
+                            <li onClick={() => scrollToComponent(navItem.id)}
+                                key={index} className='cursor-pointer hover:text-[#0074D9] transition-colors duration-300'>
+                                {navItem.name}
+                            </li>
+                            // </Link>
                         ))}
                     </ul>
                     <Menu className='my-2 hidden max-md:block cursor-pointer' onClick={toggleNav} />
@@ -44,11 +67,11 @@ const Navbar = () => {
                 <X className='ml-auto mr-8 cursor-pointer' onClick={toggleNav} />
                 <ul className='flex flex-col space-y-4 text-xl py-2 text-center'>
                     {navItems.map((navItem, index) => (
-                        <Link to={navItem.url} key={index} onClick={toggleNav} className='mx-auto z-50'>
-                            <li className='cursor-pointer hover:text-blue-400 transition-colors duration-300'>
-                                {navItem.name}
-                            </li>
-                        </Link>
+                        // <Link to={navItem.url} key={index}>
+                        <li key={index} onClick={() => scrollToComponent(navItem.id)} className='z-50 cursor-pointer hover:text-blue-400 transition-colors duration-300'>
+                            {navItem.name}
+                        </li>
+                        // </Link>
                     ))}
                 </ul>
             </div>

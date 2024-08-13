@@ -2,16 +2,16 @@ import React from 'react'
 
 const Vision = () => {
     return (
-        <div className='flex max-sm:flex-col'>
+        <div id="vision" className='flex max-sm:flex-col'>
             <div className='w-1/2 bg-white h-96 text-black max-sm:w-full'>
-                <div className="m-[20%] max-md:mx-[15%]">
+                <div className="m-[20%] my-[13%] max-md:mx-[15%]">
                     <h2 className='text-3xl font-semibold font-roboto'>My Vision</h2>
-                    <p className='font-playfair'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias quam dolores ratione, recusandae eos fuga quisquam temporibus, sapiente esse voluptatibus neque deserunt sunt deleniti necessitatibus accusamus earum ipsa dolor ipsum.</p>
+                    <p className='font-playfair'>My vision is to connect the education system in Pakistan with the needs of the industry, helping university and college students learn the latest technology trends. By working with industry experts and focusing on practical learning, I aim to change the mindset of the youth. This will help Pakistan grow into a leading tech country and strengthen our economy.</p>
                 </div>
             </div>
             <div className='w-1/2 bg-green-300 h-96 max-sm:w-full'>
                 <img
-                    src='/assets/download.jfif'
+                    src='https://usmanasif.com/wp-content/uploads/2023/10/TECH.png'
                     className='w-full h-full'
                 />
             </div>
