@@ -47,12 +47,10 @@ const Navbar = () => {
                 <div className='ml-auto mr-4 max-sm:mr-0'>
                     <ul className='flex text-xl py-2 space-x-4 lg:space-x-8 max-md:hidden'>
                         {navItems.map((navItem, index) => (
-                            // <Link to={navItem.url} key={index}>
                             <li onClick={() => scrollToComponent(navItem.id)}
                                 key={index} className='cursor-pointer hover:text-[#0074D9] transition-colors duration-300'>
                                 {navItem.name}
                             </li>
-                            // </Link>
                         ))}
                     </ul>
                     <Menu className='my-2 hidden max-md:block cursor-pointer' onClick={toggleNav} />
@@ -66,11 +64,9 @@ const Navbar = () => {
                 <X className='ml-auto mr-8 cursor-pointer' onClick={toggleNav} />
                 <ul className='flex flex-col space-y-4 text-xl py-2 text-center'>
                     {navItems.map((navItem, index) => (
-                        // <Link to={navItem.url} key={index}>
                         <li key={index} onClick={() => scrollToComponent(navItem.id)} className='z-50 cursor-pointer hover:text-blue-400 transition-colors duration-300'>
                             {navItem.name}
                         </li>
-                        // </Link>
                     ))}
                 </ul>
             </div>
